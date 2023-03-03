@@ -171,8 +171,10 @@ ul {
     border: 2px var(--main-color) solid;
     transition: 0.5s;
     background-color: transparent;
-    border-radius: 20px;
+    outline: none;
+    border-radius: 10px;
     padding: 10px;
+
 }
 .our-work .group button:hover,
 .our-work .group button.active {
