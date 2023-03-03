@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kasper | Template Two</title>
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="/css/bootstrap.css" />
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/kasper.css" />
+        <link rel="stylesheet" href="css/all.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="image">
+            <!-- Start Header -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="/images/logo.jpg" alt="" /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Our work</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Connect us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Header -->
+            <!-- Start Landing -->
+            <div class="landing">
+                <div class="content">
+                    <h1>welcome to <span>DEVART</span></h1>
+                    <p>Bring your business to the next level</p>
+                    <p>DEVART provides web design, graphic design, resume design, and more. We provide high-quality design services to help you succeed</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Landing -->
+        <!-- Start Services -->
+        <div class="services">
+            <div class="container">
+                <h2 class="main-title">Services</h2>
+                <div class="content d-flex justify-content-around row">
+                    <div class="card text-center col-md-5 mb-5">
+                        <img src="/images/social.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Social media</h5>
+                            <div class="text">
+                                <div class="left">
+                                    <p class="card-text">Facebook posts</p>
+                                    <p class="card-text">Facebook covers</p>
+                                </div>
+                                <div class="right">
+                                    <p class="card-text">Instagram posts</p>
+                                    <p class="card-text">Instagram stories</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center col-md-5 mb-5">
+                        <img src="/images/adver.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Advertise</h5>
+                            <div class="text">
+                                <div class="left">
+                                    <p class="card-text">Flyer</p>
+                                    <p class="card-text">Posters</p>
+                                </div>
+                                <div class="right">
+                                    <p class="card-text">Brochure</p>
+                                    <p class="card-text">Logos</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center col-md-5 mb-5">
+                        <img src="/images/business.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Business</h5>
+                            <div class="text">
+                                <div class="left">
+                                    <p class="card-text">Resume</p>
+                                    <p class="card-text">A4 document</p>
+                                </div>
+                                <div class="right">
+                                    <p class="card-text">Info graphic</p>
+                                    <p class="card-text">Presentation</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                    </div>
+                    <div class="card text-center col-md-5 mb-5">
+                        <img src="/images/elements-web-design.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Web design</h5>
+                            <div class="text">
+                                <div class="left">
+                                    <p class="card-text">Portfolios</p>
+                                    <p class="card-text">Landing pages</p>
+                                </div>
+                                <div class="right">
+                                    <p class="card-text">System management</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services -->
+        <!-- Start Design -->
+        <div class="our-work">
+            <div class="container">
+                <h2 class="main-title">Our work</h2>
+                <div class="group" role="group" aria-label="Basic outlined example">
+                    <button data-cat=".all" type="button" class="active">All</button>
+                    <button data-cat=".soc" type="button" class="">Social media</button>
+                    <button data-cat=".adv" type="button" class="">Advertise</button>
+                    <button data-cat=".bus" type="button" class="">Business</button>
+                    <button data-cat=".web" type="button" class="">Web design</button>
+                </div>
+                <div class="glary row d-flex justify-content-around">
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/flyar/1.jpg" />
+                        <div class="layer">
+                            <h3>flyer</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/flyar/2.jpg" />
+                        <div class="layer">
+                            <h3>flyer</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/flyar/3.jpg" />
+                        <div class="layer">
+                            <h3>flyer</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/flyar/4.jpg" />
+                        <div class="layer">
+                            <h3>flyer</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/logo/1.jpg" />
+                        <div class="layer">
+                            <h3>logo</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/logo/2.jpg" />
+                        <div class="layer">
+                            <h3>logo</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/logo/3.jpg" />
+                        <div class="layer">
+                            <h3>logo</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/logo/4.jpg" />
+                        <div class="layer">
+                            <h3>logo</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/logo/5.jpg" />
+                        <div class="layer">
+                            <h3>logo</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/poster/1.jpg" />
+                        <div class="layer">
+                            <h3>poster</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/poster/2.jpg" />
+                        <div class="layer">
+                            <h3>poster</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/poster/3.jpg" />
+                        <div class="layer">
+                            <h3>poster</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/poster/4.jpg" />
+                        <div class="layer">
+                            <h3>poster</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/prushor/1.jpg" />
+                        <div class="layer">
+                            <h3>brochure</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/prushor/2.jpg" />
+                        <div class="layer">
+                            <h3>brochure</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/prushor/3.jpg" />
+                        <div class="layer">
+                            <h3>brochure</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/prushor/4.jpg" />
+                        <div class="layer">
+                            <h3>brochure</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all adv">
+                        <img src="/images/advertis/prushor/Brown Creative Travel Adventure Trifold Brochure.jpg" />
+                        <div class="layer">
+                            <h3>brochure</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/covers/1.jpg" />
+                        <div class="layer">
+                            <h3>cover</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/covers/2.jpg" />
+                        <div class="layer">
+                            <h3>cover</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/covers/3.jpg" />
+                        <div class="layer">
+                            <h3>cover</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/covers/4.jpg" />
+                        <div class="layer">
+                            <h3>cover</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/covers/5.jpg" />
+                        <div class="layer">
+                            <h3>cover</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/posts/1.jpg" />
+                        <div class="layer">
+                            <h3>post</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/posts/2.jpg" />
+                        <div class="layer">
+                            <h3>post</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/posts/3.jpg" />
+                        <div class="layer">
+                            <h3>post</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/posts/4.jpg" />
+                        <div class="layer">
+                            <h3>post</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/posts/5.jpg" />
+                        <div class="layer">
+                            <h3>post</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/1.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/2.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/3.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/4.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/5.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all soc">
+                        <img src="/images/social media/storys/6.png" />
+                        <div class="layer">
+                            <h3>story</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/a4 docs/Untitled design (2).jpg" />
+                        <div class="layer">
+                            <h3>A4 document</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/a4 docs/Untitled design (3).jpg" />
+                        <div class="layer">
+                            <h3>A4 document</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/a4 docs/Untitled design (4).jpg" />
+                        <div class="layer">
+                            <h3>A4 document</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/a4 docs//Untitled design (5).jpg" />
+                        <div class="layer">
+                            <h3>A4 document</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/1.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/2.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/3.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/4.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/5.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/info gra/6.jpg" />
+                        <div class="layer">
+                            <h3>info graphic</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/resume/hossam khaled (1).jpg" />
+                        <div class="layer">
+                            <h3>resume</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/resume/hossam khaled (2).jpg" />
+                        <div class="layer">
+                            <h3>resume</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/resume/hossam khaled (3).jpg" />
+                        <div class="layer">
+                            <h3>resume</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/resume/hossam khaled (4).jpg" />
+                        <div class="layer">
+                            <h3>resume</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all bus">
+                        <img src="/images/busniess/resume/hossam khaled.jpg" />
+                        <div class="layer">
+                            <h3>resume</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all web">
+                        <img src="/images/web/1.png" />
+                        <div class="layer">
+                            <h3>web design</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all web">
+                        <img src="/images/web/2.jpg" />
+                        <div class="layer">
+                            <h3>web design</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all web">
+                        <img src="/images/web/3.jpg" />
+                        <div class="layer">
+                            <h3>web design</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all web">
+                        <img src="/images/web/4.jpg" />
+                        <div class="layer">
+                            <h3>web design</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                    <div class="art col-md-3 col-sm-6 all web">
+                        <img src="/images/web/5.png" />
+                        <div class="layer">
+                            <h3>web design</h5>
+                            <a>visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="up">up</span>
+        <!-- End Design -->
+        <!-- start Connect -->
+        <div class="connect">
+            <div class="container">
+                <h2 class="foot">Connect us</h2>
+                <div class="links row">
+                    <div class="number col-sm-6">
+                        <div class="one">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <p>01096198813</p>
+                        </div>
+                        <div class="two">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <p>01003700875</p>
+                        </div>
+                    </div>
+                    <ul class="col-sm-6">
+                        <li class="m-2"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="m-2"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="m-2"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                        <li class="m-2"><a href=""><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end Connect -->
+        <!-- Start Footer -->
+        <!-- end Footer -->
+        <!-- End Footer -->
+        <script src="/main.js"></script>
+        <script src="/all.js"></script>
+        <script src="/bootstrap.bundle.js"></script>
+    </body>
+</html>

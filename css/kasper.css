@@ -1,0 +1,333 @@
+/* Start Variables */
+:root {
+    --main-color: #ffde59;
+    --dark: #484848;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #131313;
+}
+ul {
+    list-style: none;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main-title:hover {
+    color: var(--dark);
+    background-color: var(--main-color);
+}
+
+/* Small */
+/* header */
+.navbar {
+    background-color: transparent;
+}
+.navbar-brand img {
+    width: 75px;
+    height: 50px;
+    border-radius: 20px;
+}
+.nav-link {
+    color: white;
+    transition: 0.5s;
+}
+.nav-link:hover {
+    color: var(--dark);
+}
+.nav-link:focus {
+    color: var(--main-color);
+}
+
+.nav-item:hover {
+    background-color: var(--main-color);
+}
+.nav-item {
+    border-radius: 20px;
+    transition: 0.5s;
+}
+/* header */
+/* landing */
+.landing {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.landing .content {
+    color: white;
+    text-align: center;
+    max-width: 700px;
+}
+.landing .content h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+.landing .content h1 span {
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.landing .content h1 span:hover {
+    -webkit-text-stroke: 1px var(--main-color);
+    color: transparent;
+}
+.landing .content p {
+    line-height: 3;
+    font-weight: bold;
+    position: relative;
+}
+.landing .content p::after {
+    content: "";
+    background-color: var(--main-color);
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+.image {
+    background-image: url(/images/landing.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+/* landing */
+/* services */
+.services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.services .content .card a {
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+.services .content .card a:hover {
+    background-color: var(--dark);
+    color: var(--main-color);
+}
+.services .content .card img {
+    height: 300px;
+}
+.services .content h5 {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 30px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.services .content .text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.services .content .text p {
+    font-weight: bold;
+    padding: 10px;
+    border: 2px var(--dark) solid;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* services */
+/* our-work */
+.our-work {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.our-work .group {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.our-work .group button {
+    color: var(--main-color);
+    border: 2px var(--main-color) solid;
+    transition: 0.5s;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+}
+.our-work .group button:hover,
+.our-work .group button.active {
+    background-color: var(--main-color);
+    color: var(--dark);
+}
+.our-work .glary {
+    margin-top: 50px;
+}
+.our-work .glary .art {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.our-work .glary .art .layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--main-color));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+}
+.our-work .glary .art .layer a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.5s;
+    margin-top: 5px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.our-work .art .layer a:hover {
+    background-color: black;
+    color: var(--main-color);
+}
+.layer h3 {
+    color: black;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px black solid;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.our-work .glary .art img {
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.our-work .art:hover img {
+    transform: scale(1.1);
+}
+.our-work .art:hover .layer {
+    height: 100%;
+}
+.up {
+    position: fixed;
+    right: -100px;
+    bottom: 40px;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.show {
+    right: 40px;
+}
+/* our-work */
+/* content */
+.connect {
+    background-color: var(--main-color);
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.connect .foot{
+    background-color: var(--dark);
+    color: var(--main-color);
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    border: 2px var(--main-color) solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.connect .foot:hover{
+    background-color: white;
+    color: var(--dark);
+    border-color: var(--dark);
+}
+.connect::before {
+    content: "";
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.connect .number {
+    margin: auto;
+    position: relative;
+}
+.connect .number .one,
+.connect .number .two {
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+}
+.connect .number .one p,
+.connect .number .two p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.connect .number .one svg,
+.connect .number .two svg {
+    font-weight: bold;
+    font-size: 30px;
+}
+.connect ul svg {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--dark);
+    transition: 0.5s;
+}
+.connect ul svg:hover {
+    transform: translateY(-5px);
+}
+
+/* content */
