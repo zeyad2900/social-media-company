@@ -174,7 +174,6 @@ ul {
     outline: none;
     border-radius: 10px;
     padding: 10px;
-
 }
 .our-work .group button:hover,
 .our-work .group button.active {
@@ -272,7 +271,7 @@ ul {
     text-align: center;
     position: relative;
 }
-.connect .foot{
+.connect .foot {
     background-color: var(--dark);
     color: var(--main-color);
     padding: 10px;
@@ -284,7 +283,7 @@ ul {
     transition: 0.5s;
     font-weight: bold;
 }
-.connect .foot:hover{
+.connect .foot:hover {
     background-color: white;
     color: var(--dark);
     border-color: var(--dark);
@@ -316,6 +315,7 @@ ul {
     font-weight: bold;
     font-size: 20px;
     margin-left: 10px;
+    text-decoration: none;
 }
 .connect .number .one svg,
 .connect .number .two svg {
